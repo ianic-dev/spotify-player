@@ -225,7 +225,7 @@ impl Command {
             Self::PlayRandom => "play a random track in the current context",
             Self::Repeat => "cycle the repeat mode",
             Self::ToggleFakeTrackRepeatMode => "toggle fake track repeat mode",
-            Self::Shuffle => "toggle the shuffle mode",
+            Self::Shuffle => "turn off the shuffle mode",
             Self::VolumeUp => "increase playback volume by 5%",
             Self::VolumeDown => "decrease playback volume by 5%",
             Self::Mute => "toggle playback volume between 0% and previous level",

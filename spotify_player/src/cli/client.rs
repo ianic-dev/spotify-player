@@ -392,7 +392,7 @@ async fn handle_playback_request(
         Command::Pause => PlayerRequest::Pause,
         Command::Next => PlayerRequest::NextTrack,
         Command::Previous => PlayerRequest::PreviousTrack,
-        Command::Shuffle => PlayerRequest::Shuffle,
+        Command::Shuffle => PlayerRequest::Resume,
         Command::Repeat => PlayerRequest::Repeat,
         Command::Volume { percent, is_offset } => {
             let volume = playback

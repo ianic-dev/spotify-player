@@ -81,7 +81,7 @@ fn handle_playback_subcommand(args: &ArgMatches) -> Result<Request> {
                     .get_one::<ContextType>("context_type")
                     .expect("context_type is required")
                     .to_owned();
-                let shuffle = args.get_flag("shuffle");
+                let shuffle = false;
 
                 let id_or_name = get_id_or_name(args);
                 Command::StartContext {
@@ -114,7 +114,7 @@ fn handle_playback_subcommand(args: &ArgMatches) -> Result<Request> {
         "pause" => Command::Pause,
         "next" => Command::Next,
         "previous" => Command::Previous,
-        "shuffle" => Command::Shuffle,
+        "shuffle" => Command::Play,
         "repeat" => Command::Repeat,
         "volume" => {
             let percent = args

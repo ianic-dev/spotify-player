@@ -201,7 +201,7 @@ impl Client {
             PlayerRequest::Shuffle => {
                 self.shuffle(!playback.shuffle_state, device_id).await?;
 
-                playback.shuffle_state = !playback.shuffle_state;
+                playback.shuffle_state = false;
             }
             PlayerRequest::Volume(volume) => {
                 self.volume(volume, device_id).await?;
