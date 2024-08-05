@@ -114,7 +114,7 @@ fn handle_playback_subcommand(args: &ArgMatches) -> Result<Request> {
         "pause" => Command::Pause,
         "next" => Command::Next,
         "previous" => Command::Previous,
-        "shuffle" => Command::Play,
+        "shuffle" => Command::Shuffle,
         "repeat" => Command::Repeat,
         "volume" => {
             let percent = args

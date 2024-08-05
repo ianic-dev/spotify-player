@@ -209,10 +209,6 @@ impl Default for KeymapConfig {
                     command: Command::OpenCommandHelp,
                 },
                 Keymap {
-                    key_sequence: "q".into(),
-                    command: Command::Quit,
-                },
-                Keymap {
                     key_sequence: "C-c".into(),
                     command: Command::Quit,
                 },

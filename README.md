@@ -1,3 +1,9 @@
+# Notes on my fork
+
+all releases mentioned in this readme will be for the official spotify-player version. 
+for the nuked shuffle feature you need to clone this repo and build from source.
+you will need to press Ctrl-S whenever you start up I think.
+
 # spotify_player
 
 ## Table of Contents

@@ -512,7 +512,7 @@ impl PlaybackMetadata {
             is_playing: p.is_playing,
             volume: p.device.volume_percent,
             repeat_state: p.repeat_state,
-            shuffle_state: p.shuffle_state,
+            shuffle_state: false,
             mute_state: None,
             fake_track_repeat_state: false,
         }

@@ -143,7 +143,7 @@ impl Client {
             PlayerRequest::StartPlayback(p, shuffle) => {
                 // Set the playback's shuffle state if specified in the request
                 if let (Some(shuffle), Some(playback)) = (shuffle, playback.as_mut()) {
-                    playback.shuffle_state = shuffle;
+                    playback.shuffle_state = false;
                 }
                 let device_id = playback.as_ref().and_then(|p| p.device_id.as_deref());
                 self.start_playback(p, device_id).await?;

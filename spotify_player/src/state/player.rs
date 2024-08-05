@@ -40,7 +40,7 @@ impl PlayerState {
             playback.is_playing = p.is_playing;
             playback.device.volume_percent = p.volume;
             playback.repeat_state = p.repeat_state;
-            playback.shuffle_state = p.shuffle_state;
+            playback.shuffle_state = false;
         }
 
         Some(playback)
